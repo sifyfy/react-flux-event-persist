@@ -1,0 +1,10 @@
+.DS_Store
+.directory
+Thumbs.db
+core
+*.swp
+*~
+*.bak
+*.log
+.stack-work
+/tags

@@ -1,0 +1,27 @@
+name:               react-flux-event-persist
+version:            0.0.0.0
+synopsis:           The wrapper for event.persist() in React
+description:        Please see README.md
+homepage:           http://github.com/siphilia/react-flux-event-persist#readme
+license:            BSD3
+license-file:       LICENSE
+author:             Siphilia
+maintainer:         siphilia.rn@gmail.com
+copyright:          (c) 2016 Siphilia
+category:           Web
+build-type:         Simple
+cabal-version:      >= 1.10
+
+library
+  default-language: Haskell2010
+  hs-source-dirs: src
+  ghc-options: -Wall
+
+  exposed-modules: React.Flux.Event.Persist
+                   React.Flux.Event.Foreign
+
+  build-depends: base >= 4.7 && < 5
+               , react-flux == 1.0.*
+
+  if impl(ghcjs)
+    build-depends: ghcjs-base
